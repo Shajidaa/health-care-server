@@ -1,5 +1,5 @@
 model Patient {
-  id String @id @default(uuid(7))
+  id String @id @default(uuid(4))
 
   name          String
   email         String    @unique
