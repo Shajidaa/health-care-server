@@ -19,6 +19,6 @@ model Appointment {
 
     payment Payment?
 
-    @@unique([patientId], name: "unique_appointment")
+    // @@unique([patientId], name: "unique_appointment")
     @@map("appointments")
 }
