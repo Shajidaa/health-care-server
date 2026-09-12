@@ -37,3 +37,9 @@ enum AppointmentStatus {
   ONGOING
   COMPLETED
 }
+
+enum DoctorVerificationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}

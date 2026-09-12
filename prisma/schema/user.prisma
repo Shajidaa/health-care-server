@@ -1,7 +1,7 @@
 model User {
   id                 String       @id @default(uuid())
   name               String
-  email              String
+  email              String       @unique
   password           String?
   googleId           String?      @unique
   authProvider       AuthProvider @default(CREDENTIAL)
@@ -16,7 +16,7 @@ model User {
   createdAt          DateTime     @default(now())
   updatedAt          DateTime     @updatedAt
   patient            Patient?
+  doctor             Doctor?
 
-  @@unique([email])
   @@map("users")
 }
