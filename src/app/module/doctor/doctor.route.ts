@@ -6,6 +6,7 @@ const router = Router();
 
 router.post(
   "/apply-as-doctor",
+
   upload.fields([
     { name: "resume", maxCount: 1 },
     { name: "additionalFiles", maxCount: 5 }, // Adjust maxCount as needed
